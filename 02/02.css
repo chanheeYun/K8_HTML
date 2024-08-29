@@ -1,33 +1,170 @@
-header {
-   background-color: aliceblue;
+* {
+   padding: 0px;
+   margin: 0px;
+
+   box-sizing: border-box;
 }
 
-main {
+header, main, footer {
+   width: 80%;
+   margin-left: 10%;
+}
+
+header, main {
    background-color: aliceblue;
+   padding-bottom: 10px;
 }
 
 footer {
-   background-color: black;
+   background-color: rgb(66, 73, 107);
    color: white;
 }
 
-#menu > li{
-   background-color: blue;
+header, header ul {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   /* 박스끼리의 간격을 동일하게 위치시킨다 
+   width를 설정해야 의미가 있다
+   속성 자체는 가로기준 정렬 속성 */
+   align-items: center;
+   /* 세로기준 가운데 정렬 */
+}
+
+header {
+   height: 80px;
+   padding: 20px;
+}
+
+/* nav > ul*/
+/* header ul {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+} */
+
+ul {
+   list-style: none;
+}
+
+.menuLi {
+   margin-right: 10px;
+   margin-left: 10px;
+   padding: 10px;
+   border-radius: 15px;
+
+   /* 이미지 있을 때 이미지 자체 사이즈 줄이고
+   height: 45px; */
+
+   background-color: royalblue;
    color: white;
 }
 
-#menu > a {
+a {
+   text-decoration: none;
+   /* 하이퍼링크에서 생기는 밑줄을 제거함 */
    color: white;
 }
+
+.menuLi:hover {
+   background-color: chocolate;
+}
+
+article {
+   padding: 60px;
+}
+
+h1 {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;  
+}
+
+h1, article > p {
+   padding: 20px;
+}
+
+p > span {
+   color: blue;
+   font-weight: bold;
+}
+
+/* p > span {
+   display: inline-flex;
+   flex-direction: row;
+} */
 
 section {
+   margin: 20px;
+   padding: 20px 40px;
+   /* 공백으로 2개 주면 위아래/좌우, 4개 주면 위부터 시계반대 방향  */
    background-color: white;
+   border-radius: 15px;
 }
 
-.s1 {
-   background-color: aqua;
+h2 {
+   padding-bottom: 20px;
+   font-size: 30px;
+}
+.secDiv {
+   display: flex;
+   flex-direction: row;
 }
 
-.s2 {
-   background-color: aquamarine;
+.secDiv > div {
+   width: 20%;
+}
+
+.secDiv img {
+   width: 80%;
+   border-radius: 50%;
+}
+
+.secDiv > p {
+   width: 80%;
+   font-size:large;
+   color: gray;
+}
+
+footer li {
+   font-size: small;
+   color: gainsboro;
+   /* border: 1px solid white; */
+   text-align: center;
+}
+
+footer ul {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 10px 5px; 
+}
+
+/* 화면크기에 따라 보여지는 화면을 자동으로 조정한다 */
+@media screen and (max-width:1024px) {
+   header, main, footer {
+      width: 100%;
+      margin-left:0px;
+   }
+}
+
+@media screen and (max-width:768px) {
+   header, header ul, .menuLi {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+   }
+   header {
+      height: auto;
+      padding: 20px;
+
+   }
+   header li {
+      width: 90%;
+      margin-bottom: 5px;
+   }
 }

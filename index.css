@@ -1,0 +1,33 @@
+* {
+   box-sizing: border-box;
+}
+ul {
+   list-style: none;
+}
+
+#title {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: baseline;
+
+   background-color: tan;
+   color: saddlebrown;
+   padding: 0px 15px;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul {
+   margin-top: 20px;
+   justify-content:left;
+   width: 90%;
+}
+
+.link {
+   background-color: beige;
+   margin: 5px 0px;
+   padding: 5px;
+}
