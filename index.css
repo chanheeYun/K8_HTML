@@ -31,3 +31,8 @@ ul {
    margin: 5px 0px;
    padding: 5px;
 }
+
+.link:hover {
+   background-color: bisque;
+   font-weight: bold;
+}
