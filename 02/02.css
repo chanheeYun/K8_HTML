@@ -143,6 +143,7 @@ footer ul {
 }
 
 /* 화면크기에 따라 보여지는 화면을 자동으로 조정한다 */
+/* max-width:1000px => 화면 크기가 1000이하일 때 적용 <=1000px의 의미로 이해 */
 @media screen and (max-width:1024px) {
    header, main, footer {
       width: 100%;
