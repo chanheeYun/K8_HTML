@@ -9,11 +9,17 @@ header, main {
    margin-left: 10%;
    display: flex;
 }
-
+@font-face {
+   font-family: 'SBAggroB';
+   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
 header {
    height: 80px;
    background-color: bisque;
    color: brown;
+   font-family: 'SBAggroB';
 
    justify-content: space-between;
    align-items: center;
@@ -38,6 +44,13 @@ section {
    margin: 5px;
 }
 
+@font-face {
+   font-family: 'CookieRun-Regular';
+   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
 button {
    background-color: rgb(206, 40, 40);
    color: wheat;
@@ -47,7 +60,7 @@ button {
    height: 50px;
    border: 0px;
    border-radius: 5px;
-   
+   font-family: 'CookieRun-Regular';
 }
 
 button:hover {
