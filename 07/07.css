@@ -1,0 +1,45 @@
+.sec, .row{
+   width: 100%;
+}
+
+.row {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.col {
+   width: 50%;
+   height: 40px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+select {
+   width: 60%;
+   font-family: 'NanumSquareNeo';
+   height: 40px;
+   font-size: large;
+   padding-left: 10px;
+}
+
+input {
+   width: 60%;
+   height: 50px;
+   margin-left: 23px;
+   font-family: 'NanumSquareNeo';
+   font-size: larger;
+   border: 0px;
+   border-radius: 8px;
+   background-color: rgb(243, 194, 130);
+}
+
+label {
+   font-family: 'NanumSquareNeo';
+   font-size: larger;
+   margin-left: 3px;
+}

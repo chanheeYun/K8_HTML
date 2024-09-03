@@ -40,16 +40,10 @@ main {
    border: 1px dotted darkred;
 }
 
-section {
-   margin: 5px;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-}
-
-section > div {
-   margin: 20px;
+.dice {
+   width: 150px;
+   height: 150px;
+   margin-bottom: 10px;
 }
 
 @font-face {
@@ -60,12 +54,12 @@ section > div {
 }
 
 button {
-   background-color: rgb(206, 40, 40);
-   color: wheat;
+   background-color: orange;
+   color: rgb(114, 74, 1);
    font-weight: bold;
    font-size: medium;
    width: 120px;
-   height: 50px;
+   height: 45px;
    border: 0px;
    border-radius: 5px;
    font-family: 'CookieRun-Regular';
@@ -76,4 +70,10 @@ button:hover {
    background-color: rgb(161, 32, 32);
    color: white;
    box-shadow: 0 0 5px 0 rgb(85, 1, 1);
+}
+
+@font-face {
+   font-family: 'NanumSquareNeo';
+   src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot);
+   src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.ttf) format("truetype");
 }

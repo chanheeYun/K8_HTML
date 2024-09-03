@@ -1,3 +1,15 @@
+section {
+   margin: 5px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+section > div {
+   margin: 20px;
+}
+
 h3 {
    text-align: center;
    margin-bottom: 5px;
@@ -12,14 +24,21 @@ main > div {
    font-family: 'CookieRun-Regular';
    font-size: larger;
    margin-bottom: 5px;
+   font-weight: lighter;
 }
 
 #result {
-   width: 90%;
+   width: 80%;
    height: 40px;
    margin-top: 10px;
    text-align: center;
-   border: 1px dotted orange;
    padding: 5px;
+
+   border: 1px dashed orange;
+   background-color: rgb(250, 245, 235);
 }
 
+.dice {
+   width: 150px;
+   height: 150px;
+}

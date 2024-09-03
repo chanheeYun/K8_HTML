@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', ()=>{
+document.addEventListener('DOMContentLoaded', () => {
    const bt1 = document.getElementById('bt1');
    const bt2 = document.getElementById('bt2');
    const bt3 = document.getElementById('bt3');
@@ -9,33 +9,33 @@ document.addEventListener('DOMContentLoaded', ()=>{
    const img2 = document.querySelector('#msg2 > img');
    const result = document.getElementById('result');
 
-   bt1.addEventListener('click', ()=>{
-      let n=Math.floor(Math.random()*6)+1;
+   bt1.addEventListener('click', () => {
+      let n = Math.floor(Math.random() * 6) + 1;
       img1.setAttribute('src', `../img/${n}.png`);
       img2.setAttribute('src', '../img/1.png');
    });
-   bt2.addEventListener('click', ()=>{
-      let n=Math.floor(Math.random()*6)+1;
+   bt2.addEventListener('click', () => {
+      let n = Math.floor(Math.random() * 6) + 1;
       img1.setAttribute('src', `../img/${n}.png`);
       img2.setAttribute('src', '../img/2.png');
    });
-   bt3.addEventListener('click', ()=>{
-      let n=Math.floor(Math.random()*6)+1;
+   bt3.addEventListener('click', () => {
+      let n = Math.floor(Math.random() * 6) + 1;
       img1.setAttribute('src', `../img/${n}.png`);
       img2.setAttribute('src', '../img/3.png');
    });
-   bt4.addEventListener('click', ()=>{
-      let n=Math.floor(Math.random()*6)+1;
+   bt4.addEventListener('click', () => {
+      let n = Math.floor(Math.random() * 6) + 1;
       img1.setAttribute('src', `../img/${n}.png`);
       img2.setAttribute('src', '../img/4.png');
    });
-   bt5.addEventListener('click', ()=>{
-      let n=Math.floor(Math.random()*6)+1;
+   bt5.addEventListener('click', () => {
+      let n = Math.floor(Math.random() * 6) + 1;
       img1.setAttribute('src', `../img/${n}.png`);
       img2.setAttribute('src', '../img/5.png');
    });
-   bt6.addEventListener('click', ()=>{
-      let n=Math.floor(Math.random()*6)+1;
+   bt6.addEventListener('click', () => {
+      let n = Math.floor(Math.random() * 6) + 1;
       img1.setAttribute('src', `../img/${n}.png`);
       img2.setAttribute('src', '../img/6.png');
    });
