@@ -11,9 +11,11 @@ ul {
    justify-content: space-between;
    align-items: flex-end;
 
-   background-color: tan;
+   background-color: rgb(255, 204, 137);
    color: saddlebrown;
    padding: 0px 15px;
+   font-family: 'Paperlogy-8ExtraBold';
+   font-weight: 500;
 }
 
 a {
@@ -27,13 +29,34 @@ ul {
 }
 
 .link {
-   background-color: beige;
-   margin: 5px 0px;
+   align-content: center;
+   text-indent: 10px;
+
+   background-color: rgb(253, 253, 185);
+   margin: 10px 0px;
    padding: 5px;
-   height: 50px;
+   height: 55px;
+   font-family: 'PTBandocheB';
+   font-size: large;
 }
 
+
 .link:hover {
-   background-color: bisque;
+   background-color: rgb(236, 205, 118);
    font-weight: bold;
+   font-size: x-large;
+}  
+
+@font-face {
+   font-family: 'PTBandocheB';
+   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/PTBandocheB.woff2') format('woff2');
+   font-weight: 700;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Paperlogy-8ExtraBold';
+   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+   font-weight: 800;
+   font-style: normal;
 }
