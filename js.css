@@ -73,7 +73,7 @@ button {
 }
 
 button:hover {
-   background-color: rgb(145, 28, 28);
+   background-color: rgb(161, 32, 32);
    color: white;
    box-shadow: 0 0 5px 0 rgb(85, 1, 1);
 }

@@ -19,5 +19,7 @@ main > div {
    height: 40px;
    margin-top: 10px;
    text-align: center;
+   border: 1px dotted orange;
+   padding: 5px;
 }
 

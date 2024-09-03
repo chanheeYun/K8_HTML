@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
          img2.setAttribute('src', `../img/${u}.png`);
          img2.setAttribute('alt', `user number ${u}`);
 
-         if (u === n) result.innerHTML = '정답!'
+         if (u === n) result.innerHTML = '정답'
          else result.innerHTML = '땡!'
       });
    }
