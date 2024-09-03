@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
    for (let bt of bts) {
       bt.addEventListener('click', () => {
          let n = Math.floor(Math.random() * 6) + 1;
-         let u = bt.textContent;
+         let u = parseInt(bt.textContent);
 
          img1.setAttribute('src', `../img/${n}.png`);
          img1.setAttribute('alt', `computer number ${n}`);
@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
          img2.setAttribute('src', `../img/${u}.png`);
          img2.setAttribute('alt', `user number ${u}`);
 
-         if (u === n) result.innerHTML = '정답'
-         else result.innerHTML = '땡!'
+         if (u === n) result.innerHTML = '정답';
+         else result.innerHTML = '땡!';
       });
    }
 
