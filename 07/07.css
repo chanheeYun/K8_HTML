@@ -31,6 +31,8 @@ input {
    width: 60%;
    height: 50px;
    margin-left: 23px;
+   text-indent: 15px;
+
    font-family: 'NanumSquareNeo';
    font-size: larger;
    border: 0px;
@@ -39,7 +41,7 @@ input {
 }
 
 label {
-   font-family: 'NanumSquareNeo';
+   font-family: 'NanumSquareNeoBold';
    font-size: larger;
    margin-left: 3px;
 }
