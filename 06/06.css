@@ -13,3 +13,11 @@ main > div {
    font-size: larger;
    margin-bottom: 5px;
 }
+
+#result {
+   width: 90%;
+   height: 40px;
+   margin-top: 10px;
+   text-align: center;
+}
+

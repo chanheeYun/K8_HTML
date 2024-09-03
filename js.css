@@ -47,6 +47,7 @@ section {
    justify-content: center;
    align-items: center;
 }
+
 section > div {
    margin: 20px;
 }
