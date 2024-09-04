@@ -1,0 +1,46 @@
+.sec {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.title {
+   font-size: 50px;
+   font-family: 'SBAggroB';
+}
+
+.game {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items:flex-start;
+}
+
+#ok {
+   height: 40px;
+   width: 25%;
+}
+
+#what {
+   width: 256px;
+   height: 256px;
+   margin-bottom: 10px;
+}
+
+input {
+   width: 50%;
+   height: 40px;
+   text-align: center;
+   font-size: x-large;
+   margin-right: 7px;
+   font-family: 'NanumSquareNeoBold';
+}
+
+input::placeholder {
+   font-size: large;
+}
+
+input:focus::placeholder {
+   color: transparent;
+}
