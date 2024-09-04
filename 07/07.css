@@ -2,6 +2,10 @@
    width: 100%;
 }
 
+.sec {
+   padding-right: 20px;
+}
+
 .row {
    display: flex;
    flex-direction: row;
@@ -24,11 +28,11 @@ select {
    font-family: 'NanumSquareNeo';
    height: 40px;
    font-size: large;
-   padding-left: 10px;
+   padding-left: 8px;
 }
 
 input {
-   width: 60%;
+   width: 61%;
    height: 50px;
    margin-left: 23px;
    text-indent: 15px;
@@ -37,11 +41,20 @@ input {
    font-size: larger;
    border: 0px;
    border-radius: 8px;
-   background-color: rgb(243, 194, 130);
+   background-color: rgb(240, 200, 147);
 }
 
 label {
    font-family: 'NanumSquareNeoBold';
    font-size: larger;
-   margin-left: 3px;
+
+   padding-left: 5px;
+   height: 10px;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#txt2 {
+   background-color: rgb(243, 185, 109);
 }
