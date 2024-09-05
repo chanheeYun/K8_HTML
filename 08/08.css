@@ -8,6 +8,7 @@
 .title {
    font-size: 50px;
    font-family: 'SBAggroB';
+   color: rgb(83, 56, 26);
 }
 
 .game {
@@ -19,7 +20,8 @@
 
 #ok {
    height: 40px;
-   width: 25%;
+   width: auto;
+   padding: 0 15px;
 }
 
 #what {
@@ -39,6 +41,7 @@ input {
 
 input::placeholder {
    font-size: large;
+   text-align: center;
 }
 
 input:focus::placeholder {
