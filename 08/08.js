@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
    //랜덤수
    let n;
-   //flag 변수 랜덤수 생성 타이밍 조절용
+   //flag 변수 - 랜덤수 생성 타이밍 조절용
    let flag = false;
 
    bt.addEventListener('click', (e) => {

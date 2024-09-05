@@ -31,7 +31,7 @@
 }
 
 input {
-   width: 50%;
+   width: 65%;
    height: 40px;
    text-align: center;
    font-size: x-large;
@@ -40,8 +40,8 @@ input {
 }
 
 input::placeholder {
-   font-size: large;
-   text-align: center;
+   font-size: medium;
+   text-indent: 10px;
 }
 
 input:focus::placeholder {
