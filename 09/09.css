@@ -1,0 +1,34 @@
+.sec {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   width: 100%;
+}
+
+.sec > input {
+   width: 40%;
+   height: 40px;
+   margin: 10px;
+}
+#txt2 {
+   background-color: antiquewhite;
+   font-size: large;
+}
+#txt1 {
+   font-size: medium;
+}
+#txt1, #txt2 {
+   text-align: center;
+   font-family: 'NanumSquareNeoBold';
+}
+
+
+#txt1:focus::placeholder {
+   color: transparent;
+}
+
+.sec > button {
+   width: 27%;
+   margin: 4px;
+}
