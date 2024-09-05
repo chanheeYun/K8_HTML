@@ -38,6 +38,8 @@ ul {
    height: 55px;
    font-family: 'PTBandocheB';
    font-size: large;
+   font-weight: bold;
+   color: rgb(129, 68, 33);
 }
 
 
