@@ -1,0 +1,59 @@
+.sec {
+   width: 100%;
+
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.divPlus {
+   padding: 10px;
+   margin-bottom: 20px;
+}
+
+.div1 {
+   padding: 10px;
+   margin: 0px 2px 15px 2px;
+
+   border-radius: 10px;
+}
+
+span {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   
+   font-size: large;
+   font-weight: bold;
+   background-color: white;
+   text-align: center;
+   margin: 3px;
+}
+
+#plus {
+   background-color: transparent;
+   font-size: xx-large;
+}
+
+.sp0 {
+   background-color: rgb(255, 130, 130);
+}
+
+.sp1 {
+   background-color: rgb(153, 226, 255);
+}
+.sp2 {
+   background-color: rgb(250, 250, 102);
+}
+.sp3 {
+   background-color: rgb(128, 255, 128);
+}
+.sp4 {
+   background-color: pink;
+}
+
