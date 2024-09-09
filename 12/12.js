@@ -4,7 +4,8 @@ const getDate = (ul)=>{
    let url = 'https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=82ca741a2844c5c180a208137bb92bd7&targetDt=20240908'
 
    fetch(url)
-      .then(resp => resp.json() )
+   .then(resp => resp.json() )
+   // .then(data => console.log(data.boxOfficeResult['dailyBoxOfficeList'])
       .then(data => {
          let dailyBoxOfficeList = data.boxOfficeResult.dailyBoxOfficeList;
          
@@ -12,7 +13,6 @@ const getDate = (ul)=>{
          console.log(tm);
          ul.innerHTML = tm.join('') ;
       })
-      // .then(data => console.log(data.boxOfficeResult['dailyBoxOfficeList'])
       .catch(err => console.error(err)) ;
 }
 
