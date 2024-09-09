@@ -11,6 +11,9 @@ input {
    height: 30px;
    margin-bottom: 10px;
 }
+#secBt41, #secBt42 {
+   width: 25%;
+}
 
 .sec > button {
    width: 15%;
