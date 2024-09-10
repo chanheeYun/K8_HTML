@@ -1,3 +1,95 @@
+#boxofficeMain {
+   display: flex;
+   
+   flex-direction: column;
+   justify-content: start;
+   align-items: center;
+}
+.sec, .divDt {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.sec {
+   width: 100%;
+}
+
+.divDt {
+   padding: 10px;
+   width: 80%;
+   height: 70px;
+   margin: 10px;
+   background-color: rgb(255, 247, 236);
+   border: dashed 1px rgb(255, 188, 101);
+}
+
+input[type=date] {
+   height: 30px;
+   width: 30%;
+}
+
 ul {
-   list-style: none;
+   width: 80%;
+}
+
+.mvli {
+   list-style-type: none;
+   margin: 5px;
+   transition-property: all;
+   transition-duration: 1s;
+}
+
+li:hover {
+   font-weight: bold;
+   box-shadow: 0 0 5px 0 ;
+}
+
+.rank {
+   background-color: rgb(255, 226, 215);
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.movieNm, .openDt{
+   margin-left: 5px;
+}
+
+.openDt {
+   float: right;
+}
+
+#li1:hover {
+   background-color: rgb(255, 91, 31);
+}
+#li2:hover {
+   background-color: rgb(255, 108, 55);
+}
+#li3:hover {
+   background-color: rgb(255, 129, 83);
+}
+#li4:hover {
+   background-color: rgb(252, 157, 122);
+}
+#li5:hover {
+   background-color: rgb(255, 179, 151);
+}
+#li6:hover {
+   background-color: rgb(252, 194, 173);
+}
+#li7:hover {
+   background-color: rgb(252, 211, 197);
+}
+#li8:hover {
+   background-color: rgb(255, 226, 215);
+}
+#li9:hover {
+   background-color: rgb(253, 237, 231);
+}
+#li10:hover {
+   background-color: rgb(253, 249, 247);
 }
