@@ -14,14 +14,14 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding-left: 30px;
+   padding-left: 50px;
 }
 
 #mvInfo {
    list-style: none;
    font-size: small;
    color: rgb(240, 233, 233);
-   font-family: GmarketSansMedium;
+   font-family: 'GmarketSansMedium';
 }
 
 #refDiv {
@@ -29,8 +29,9 @@
    color: rgba(240, 233, 233, 0.575);
    padding-bottom: 6px;
    align-self: flex-end;
-   width: 18%;
-   font-family: Pretendard-Regular;
+   font-family: 'Pretendard-Regular';
+   text-align: end;
+   padding-right: 10px;
 }
 
 .sec, .divDt {
@@ -59,7 +60,6 @@ input[type=date] {
 }
 
 .sec > ul {
-   margin-top: 5px;
    list-style: none;
    width: 100%;
 }
@@ -70,9 +70,6 @@ input[type=date] {
    display: flex;
    justify-content: start;
    align-items: center;
-
-   transition-property: all;
-   transition-duration: 1s;
 }
 
 .sel {
@@ -85,14 +82,14 @@ fieldset {
    height: 30px;
    font-size: 12px;
    display: flex;
-   justify-content: center;
+   justify-content: flex-end;
    align-items: center;
 
    border: 0px;
 }
 
 label {
-   margin: 0 6px 0 3px ;
+   margin: 0 20px 0 2px ;
 }
 
 .mvli:hover {

@@ -10,26 +10,21 @@ const getDetail = (movieCd) => {
       .then(data => {
          console.log(data)
          let detail = data.movieInfoResult.movieInfo;
-         let actors = detail.actors;
-         if (actors.length <= 3) {
-            actors = actors.map(item => item.peopleNm);
-         } else {
-            actors = actors.map(item => item.peopleNm);
+
+         let actors = detail.actors.map(item => item.peopleNm);
+         if (actors.length > 3) {
             actors = actors.slice(0, 2);
-         }
+         } 
+         let genre = detail.genres.map(item => item.genreNm).join(', ');
          let grade = detail.audits;
          let direc = detail.directors;
-         let genre = detail.genres;
-         let openDt = detail.openDt;
 
          let tm = `<li>영화명 : ${detail.movieNm} (${grade[0].watchGradeNm})</li>
-                  <li>장르 : ${genre[0].genreNm}</li>
+                  <li>장르 : ${genre}</li>
                   <li>감독 : ${direc[0].peopleNm}</li>
                   <li>출연 : ${actors.join(', ')}</li>
-                  <li>상영시간 : ${detail.showTm}분</li>`;
-         console.log(tm)
+                  <li>상영 시간 : ${detail.showTm}분</li>`;
          mvInfo.innerHTML = tm ;
-
       })
       .catch(err => console.error(err));
 }
@@ -101,6 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
    const dt = document.querySelector('#dt');
    const ul = document.querySelector('.sec > ul');
    const rad = document.getElementsByName('contury');
+   const info = document.querySelector('#mvInfo');
    // const rad = document.querySelectorAll('input[name=contury]') ;
 
    // dt.setAttribute('max', yesterday) ;
@@ -120,11 +116,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
    dt.addEventListener('change', () => {
       getData(dt.value.replaceAll('-', ''), ul, getGubun())
+      info.innerHTML = '';
    });
-
+   
    for (let r of rad) {
       r.addEventListener('click', () => {
-         if (r.checked) getData(dt.value.replaceAll('-', ''), ul, r.value);
+         if (r.checked) {
+            getData(dt.value.replaceAll('-', ''), ul, r.value);
+            info.innerHTML = '';
+         }
       });
    }
 });
