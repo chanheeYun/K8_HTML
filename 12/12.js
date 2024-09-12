@@ -1,9 +1,40 @@
+const testAPI = '82ca741a2844c5c180a208137bb92bd7';
+
 const getDetail = (movieCd) => {
-   alert('movieCd : ' + movieCd);
-} 
+   const mvInfo = document.querySelector('#mvInfo');
+   let url = 'https://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieInfo.json?';
+   url = `${url}key=${testAPI}&movieCd=${movieCd}`;
+   // console.log(url)
+   fetch(url)
+      .then(resp => resp.json())
+      .then(data => {
+         console.log(data)
+         let detail = data.movieInfoResult.movieInfo;
+         let actors = detail.actors;
+         if (actors.length <= 3) {
+            actors = actors.map(item => item.peopleNm);
+         } else {
+            actors = actors.map(item => item.peopleNm);
+            actors = actors.slice(0, 2);
+         }
+         let grade = detail.audits;
+         let direc = detail.directors;
+         let genre = detail.genres;
+         let openDt = detail.openDt;
+
+         let tm = `<li>영화명 : ${detail.movieNm} (${grade[0].watchGradeNm})</li>
+                  <li>장르 : ${genre[0].genreNm}</li>
+                  <li>감독 : ${direc[0].peopleNm}</li>
+                  <li>출연 : ${actors.join(', ')}</li>
+                  <li>상영시간 : ${detail.showTm}분</li>`;
+         console.log(tm)
+         mvInfo.innerHTML = tm ;
+
+      })
+      .catch(err => console.error(err));
+}
 
 const getData = (selDt, ul, nation) => {
-   const testAPI = '82ca741a2844c5c180a208137bb92bd7';
    let url = 'https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?';
    url = `${url}key=${testAPI}&targetDt=${selDt}`;
    if (nation != 'T') {
@@ -12,16 +43,17 @@ const getData = (selDt, ul, nation) => {
    fetch(url)
       .then(resp => resp.json())
       .then(data => {
+         // console.log(data)
          let boxOffice = data.boxOfficeResult.dailyBoxOfficeList;
 
          let tm = boxOffice.map(item =>
-            `<a href='' onClick='getDetail(${item.movieCd})'>
+            `<a href="#" onClick='getDetail(${item.movieCd})'>
                <li class='mvli' id='li${item.rank}'>
                   <span class='rank'>${item.rank}</span>
                   <span class='movieNm'>${item.movieNm}</span>
-                  <span   an class='openDt'>${item.openDt}</span>
+                  <span class='openDt'>${item.openDt}</span>
                   <span class='rankInten'>${item.rankInten > 0 ?
-                  "<span class='spred'>▲ </span>" : item.rankInten < 0 ?
+               "<span class='spred'>▲ </span>" : item.rankInten < 0 ?
                   "<span class='spblue'>▼ </span>" : '-'}${Math.abs(item.rankInten) != 0 ? Math.abs(item.rankInten) : ''}</span>
                </li>
             </a>`);

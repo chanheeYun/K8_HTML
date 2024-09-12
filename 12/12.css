@@ -1,10 +1,36 @@
 #boxofficeMain {
-   height: 470px;
    display: flex;
-
-   flex-direction: column;
+   height: 470px;
    justify-content: start;
+   flex-direction: column;
    align-items: center;
+}
+
+#mvFooter {
+   height: 135px;
+   background-color: rgb(170, 53, 53);
+   width: 80%;
+   margin-left: 10%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 30px;
+}
+
+#mvInfo {
+   list-style: none;
+   font-size: small;
+   color: rgb(240, 233, 233);
+   font-family: GmarketSansMedium;
+}
+
+#refDiv {
+   font-size: 11px;
+   color: rgba(240, 233, 233, 0.575);
+   padding-bottom: 6px;
+   align-self: flex-end;
+   width: 18%;
+   font-family: Pretendard-Regular;
 }
 
 .sec, .divDt {
@@ -16,6 +42,7 @@
 .sec {
    width: 100%;
    flex-direction: column;
+   padding-bottom: 10px;
 }
 
 .divDt {
