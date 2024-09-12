@@ -1,6 +1,8 @@
 * {
+   background-color: bisque;
    box-sizing: border-box;
 }
+
 ul {
    list-style: none;
 }
@@ -11,8 +13,7 @@ ul {
    justify-content: space-between;
    align-items: flex-end;
 
-   background-color: rgb(255, 204, 137);
-   color: saddlebrown;
+   color: brown;
    padding: 0px 15px;
    font-family: 'Paperlogy-8ExtraBold';
    font-weight: 500;
@@ -32,19 +33,21 @@ ul {
    align-content: center;
    text-indent: 10px;
 
-   background-color: rgb(253, 253, 185);
+   background-color: rgba(253, 188, 66, 0.877);;
    margin: 10px 0px;
    padding: 5px;
    height: 55px;
    font-family: 'PTBandocheB';
    font-size: large;
    font-weight: bold;
-   color: rgb(129, 68, 33);
+   color: rgb(129, 68, 35);
 }
 
 
 .link:hover {
-   background-color: rgb(236, 205, 118);
+   background-color: rgb(161, 32, 32);
+   color: white;
+   box-shadow: 0 0 5px 0 rgb(85, 1, 1);
    font-weight: bold;
    font-size: x-large;
 }  
