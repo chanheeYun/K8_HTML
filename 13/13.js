@@ -25,8 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
    bt.addEventListener('click', (e) => {
       e.preventDefault();
 
-      if (!flag) n = shuffle(flag);
-      console.log(n + 1)
+      if (!flag) {
+         n = shuffle(flag);
+         bt.innerHTML = '게임중 ...';
+         console.log(n + 1)
+      };
 
       for (let b in boxes) {
          boxes[b].innerHTML = `${parseInt(b) + 1}`;
