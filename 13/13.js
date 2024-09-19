@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
       box.addEventListener('click', (e) => {
          e.preventDefault();
          if (result.innerHTML == 'BOOM!!') return;
+         if (box.innerHTML.includes('img')) return;
 
          if (flag) {
             if (box === boxes[n]) {
